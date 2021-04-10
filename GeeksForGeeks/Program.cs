@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GeeksForGeeks.Stacks;
+using System;
 
 namespace GeeksForGeeks
 {
@@ -6,7 +7,13 @@ namespace GeeksForGeeks
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			int[] nums = { 1, 1, 2, 3, 4, 2, 1 };
+			int[] result = NextGreaterFrequencyElement.nextGreaterFreq(nums);
+			foreach (int i in result)
+			{
+				Console.WriteLine(i);
+			}
+			Console.ReadLine();
 		}
 	}
 }
