@@ -7,16 +7,25 @@ namespace GeeksForGeeks
 	{
 		static void Main(string[] args)
 		{
-			int[] nums = { 1, 1, 2, 3, 4, 2, 1 };
-			int[] result = NextGreaterFrequencyElement.nextGreaterFreq(nums);
+			//int[] nums = { 5,4,3,4,5 };
+			//long result = MaximumProductOfIndicesOfNextGreaterOnLeftAndRight.maxProduct(nums);
+			//Console.WriteLine(result);
 
 
-
-
-			foreach (int i in result)
+			int[,] peoples =
 			{
-				Console.WriteLine(i);
-			}
+				{ 0, 0, 1, 0 },
+				{ 0, 0, 1, 0 },
+				{ 0, 0, 0, 0 },
+				{ 0, 0, 1, 0 }
+			};
+
+			int res = TheCelebrityProblem.celebrityUsingGraphs(peoples.GetLength(0),peoples);
+			Console.WriteLine(res);
+			//foreach (int i in result)
+			//{
+			//	Console.WriteLine(i);
+			//}
 			Console.ReadLine();
 		}
 	}
