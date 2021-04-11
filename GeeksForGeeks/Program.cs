@@ -12,15 +12,17 @@ namespace GeeksForGeeks
 			//Console.WriteLine(result);
 
 
-			int[,] peoples =
-			{
-				{ 0, 0, 1, 0 },
-				{ 0, 0, 1, 0 },
-				{ 0, 0, 0, 0 },
-				{ 0, 0, 1, 0 }
-			};
+			//int[,] peoples =
+			//{
+			//	{ 0, 0, 1, 0 },
+			//	{ 0, 0, 1, 0 },
+			//	{ 0, 0, 0, 0 },
+			//	{ 0, 0, 1, 0 }
+			//};
 
-			int res = TheCelebrityProblem.celebrityUsingGraphs(peoples.GetLength(0),peoples);
+
+			string str = "100 * 2 + 12";
+			int res = EvaluateExpression.evaluate(str);
 			Console.WriteLine(res);
 			//foreach (int i in result)
 			//{
