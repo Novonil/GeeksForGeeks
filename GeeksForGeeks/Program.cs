@@ -1,5 +1,6 @@
 ﻿using GeeksForGeeks.Stacks;
 using System;
+using System.Collections.Generic;
 
 namespace GeeksForGeeks
 {
@@ -21,9 +22,22 @@ namespace GeeksForGeeks
 			//};
 
 
-			string str = "100 * 2 + 12";
-			int res = EvaluateExpression.evaluate(str);
-			Console.WriteLine(res);
+			//char[] str = "abcdef".ToCharArray();
+
+
+			List<(int, int)> arr = new List<(int, int)>(); ;
+			arr.Add(( 6,8 ));
+			arr.Add(( 1,9 ));
+			arr.Add(( 2,4 ));
+			arr.Add(( 4,7 ));
+
+
+
+			List<(int,int)> res = MergeOverlappingIntervals.merge(arr);
+			foreach(var v in res)
+			{
+				Console.WriteLine(v.Item1 + " , " + v.Item2);
+			}
 			//foreach (int i in result)
 			//{
 			//	Console.WriteLine(i);
